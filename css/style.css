@@ -1,0 +1,78 @@
+
+body {
+    background-color: rgb(233, 193, 214);
+    font-family: 'Press Start 2P', sans-serif, serif;
+    color: rgb(28, 36, 141);
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+#game-board {
+    background-image: url('../resources/wood-grain-texture.jpg');
+    width: 70%;
+    max-width: 400px;
+    border-radius: 2%;
+    border: 2px ridge peachpuff;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2%;
+}
+
+.square {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    margin-bottom: 0;
+    border-radius: 2%;
+    border: 2px solid peachpuff;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.square:after{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+section:nth-last-child(-n + 3){
+    padding-top: 0;
+}
+
+.p1 {
+    background-image: url(../resources/tp_pbb.png);
+    
+}
+
+.p2 {
+    background-image: url(../resources/tp_rwb.png);
+    
+}
+
+
+h2{
+    display: none;
+    color: rgb(156, 20, 77);
+    font-size: 3rem;
+    background-color: rgba(238, 224, 231, 0.8);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#refresh-btn{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-family: 'Press Start 2P', sans-serif, serif;
+    padding: 10px;
+    border: 2px outset;
+    border-radius: 2%;
+    color: rgb(194, 36, 128);
+}
